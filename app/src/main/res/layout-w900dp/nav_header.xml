@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/navdrawer_profile_image_size"
+        android:layout_height="@dimen/navdrawer_profile_image_size"
+        android:paddingTop="@dimen/keyline_1_minus_8dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_account_circle" />
+
+    <TextView
+        android:id="@+id/salesman_name"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/keyline_1_minus_8dp"
+        android:layout_height="wrap_content"
+        android:tag="SalesmanName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:text="Victor García" />
+
+    <TextView
+        android:id="@+id/salesman_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="victorg@farmacia.com" />
+</LinearLayout>

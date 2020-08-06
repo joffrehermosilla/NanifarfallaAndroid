@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.0"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Versiones
+ext {
+    minSdkVersion = 14
+    targetSdkVersion = 25
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
+    supportLibraryVersion = '29.0.0'
+    guavaVersion = '29.0'
+    circleImageViewVersion ='3.1.0'
+    constraintLayoutVersion='1.1.13'
+    glideVersion='4.11.0'
+    retrofitVersion='2.9.0'
+    gsonVersion='2.8.6'
+    junitVersion='5.4'
+    appCompat='1.1.0'
+    extJunit='1.1.1'
+    espressoCore='3.2.0'
+    materialMaterial='4.0.0'
+    navigation='2.3.0'
+    rxandroid='3.0.0'
+    rxjava='3.0.5'
+    rxjava2='0.20.0'
+    rxbinding3='3.0.0-alpha2'
+    rxbinding4='4.0.0'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
