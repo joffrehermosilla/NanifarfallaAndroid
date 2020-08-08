@@ -50,14 +50,30 @@ dependencies {
  //   androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoCore"
 
-  implementation 'com.google.android.material:material:3.3.2'
-    implementation "com.google.android.material:material:$rootProject.constraintLayoutVersion"
+   // implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.cardview:cardview:$rootProject.cardView"
+
+  //implementation 'com.google.android.material:material:1.0.0'
+   // implementation "com.google.android.material:material:$rootProject.constraintLayoutVersion"
 
     implementation "com.google.android.material:material:$rootProject.materialMaterial"
    // implementation 'androidx.navigation:navigation-fragment:2.0.0'
     implementation "androidx.navigation:navigation-fragment:$rootProject."
     //implementation 'androidx.navigation:navigation-ui:2.3.0'
     implementation "androidx.navigation:navigation-ui:$rootProject.navigation"
+
+    // 1. Use Guava in your implementation only:
+    implementation("com.google.guava:guava:29.0-jre")
+
+    // 2. Use Guava types in your public API:
+    api("com.google.guava:guava:29.0-jre")
+
+    // 3. Android - Use Guava in your implementation only:
+    implementation("com.google.guava:guava:29.0-android")
+
+    // 4. Android - Use Guava types in your public API:
+    api("com.google.guava:guava:29.0-android")
+
    // implementation "com.google.guava:guava:18.0"
     implementation "com.google.guava:guava:$rootProject.guavaVersion"
 
@@ -91,11 +107,12 @@ dependencies {
   //  implementation 'com.github.akarnokd:rxjava2-extensions:0.20.0'
     implementation "com.github.akarnokd:rxjava2-extensions:$rootProject.rxjava2"
    //implementation "com.github.akarnokd:rxjava3-extensions:3.0.0"
-    implementation "com.github.akarnokd:rxjava3-extensions:$rootProject.rxandroid"
+    implementation "com.github.akarnokd:rxjava3-extensions:$rootProject.extensionAndroid"
  //   implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha2'
     implementation "com.jakewharton.rxbinding3:rxbinding:$rootProject.rxbinding3"
    // implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
     implementation "com.jakewharton.rxbinding4:rxbinding:$rootProject.rxbinding4"
+
 
 }
 //nox_adb.exe connect 127.0.0.1:62001.

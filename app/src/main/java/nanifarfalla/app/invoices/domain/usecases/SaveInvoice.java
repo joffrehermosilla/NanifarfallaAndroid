@@ -1,8 +1,9 @@
 package nanifarfalla.app.invoices.domain.usecases;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
+
 import nanifarfalla.app.invoices.data.IInvoicesRepository;
 import nanifarfalla.app.invoices.domain.entities.Invoice;
 

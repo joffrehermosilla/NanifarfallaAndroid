@@ -1,10 +1,10 @@
 package nanifarfalla.app.customers.presentation;
 
-import com.hermosaprogramacion.premium.appproductos.customers.domain.criteria.AllCustomersSpec;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.criteria.CustomersSelector;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.usecases.IGetCustomers;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.customers.domain.criteria.AllCustomersSpec;
+import nanifarfalla.app.customers.domain.criteria.CustomersSelector;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.customers.domain.usecases.IGetCustomers;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 

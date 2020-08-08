@@ -1,11 +1,11 @@
 package nanifarfalla.app.products.data.datasource.cloud;
 
-import android.support.annotation.NonNull;
-
-import nanifarfalla.app.selection.Query;
-import nanifarfalla.app.products.domain.model.Product;
+import androidx.annotation.NonNull;
 
 import java.util.List;
+
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Interfaz de comunicación con el repositorio para la fuente de datos remota

@@ -1,10 +1,10 @@
 package nanifarfalla.app.invoices.domain.entities;
 
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
 
-import com.google.common.base.Strings;
+//import android.support.annotation.IntRange;
 
 /**
  * Objetos de dominio para los ítems de facturas

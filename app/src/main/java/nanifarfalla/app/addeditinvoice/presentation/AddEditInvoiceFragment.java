@@ -4,11 +4,6 @@ package nanifarfalla.app.addeditinvoice.presentation;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull
-import com.google.android.material.textfield.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,17 +13,28 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.common.base.Preconditions;
-import nanifarfalla.app.R;
-import nanifarfalla.app.addeditinvoice.AddEditInvoiceActivity;
-import nanifarfalla.app.addeditinvoiceitem.AddEditInvoiceItemActivity;
-import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
-import nanifarfalla.app.customers.CustomersActivity;
-import nanifarfalla.app.util.DateTimeUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.AddEditInvoiceActivity;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.addeditinvoiceitem.AddEditInvoiceItemActivity;
+import nanifarfalla.app.customers.CustomersActivity;
+import nanifarfalla.app.util.DateTimeUtils;
+
+//import android.support.v4.app.Fragment;
+//import android.support.v7.widget.DividerItemDecoration;
+//import android.support.v7.widget.RecyclerView;
 
 /**
  * Vista para "Añadir factura"
@@ -45,6 +51,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
     private Button mAddItemButton;
     private RecyclerView mInvoiceItemsList;
     private InvoiceItemAdapter mInvoiceItemAdapter;
+
     private TextView mSubtotalText;
     private TextView mTaxText;
     private TextView mTotalText;
@@ -141,6 +148,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
                     }
                 });
         mInvoiceItemsList.setAdapter(mInvoiceItemAdapter);
+
         mInvoiceItemsList.addItemDecoration(decoration);
 
         // Importes totales

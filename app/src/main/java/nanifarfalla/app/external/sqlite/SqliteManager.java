@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.hermosaprogramacion.premium.appproductos.external.sqlite.DatabaseContract.Products;
+import nanifarfalla.app.external.sqlite.DatabaseContract.Products;
 
 /**
  * Manejador de creación y versionamiento de la base de datos

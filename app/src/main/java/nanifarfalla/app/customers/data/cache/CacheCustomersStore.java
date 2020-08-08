@@ -1,17 +1,19 @@
 package nanifarfalla.app.customers.data.cache;
 
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import nanifarfalla.app.customers.domain.criteria.CustomersSelector;
-import nanifarfalla.app.customers.domain.entities.Customer;
-import nanifarfalla.app.selection.Query;
-import nanifarfalla.app.util.DateTimeUtils;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+
+import nanifarfalla.app.customers.domain.criteria.CustomersSelector;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.util.DateTimeUtils;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

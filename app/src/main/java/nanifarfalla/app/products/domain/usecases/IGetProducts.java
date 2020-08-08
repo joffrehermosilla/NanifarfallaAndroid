@@ -1,11 +1,11 @@
 package nanifarfalla.app.products.domain.usecases;
 
-import android.support.annotation.NonNull;
-
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
+import androidx.annotation.NonNull;
 
 import java.util.List;
+
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Abstracción del interactor para obtener productos

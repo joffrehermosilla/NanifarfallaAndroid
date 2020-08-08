@@ -1,8 +1,8 @@
 package nanifarfalla.app.login;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import nanifarfalla.app.R;
 import nanifarfalla.app.di.DependencyProvider;
 import nanifarfalla.app.login.presentation.LoginFragment;

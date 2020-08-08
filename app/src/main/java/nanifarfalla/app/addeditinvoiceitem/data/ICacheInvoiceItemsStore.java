@@ -1,11 +1,11 @@
 package nanifarfalla.app.addeditinvoiceitem.data;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
+import java.util.List;
 
 import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
 import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
-
-import java.util.List;
 
 /**
  * Estandar para caché de items de factura

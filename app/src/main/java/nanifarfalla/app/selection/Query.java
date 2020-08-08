@@ -1,8 +1,8 @@
 package nanifarfalla.app.selection;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
-import com.hermosaprogramacion.premium.appproductos.selection.specification.Specification;
+import nanifarfalla.app.selection.specification.Specification;
 
 /**
  * Representa una consulta sobre una fuente de datos

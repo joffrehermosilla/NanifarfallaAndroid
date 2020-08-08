@@ -1,7 +1,7 @@
 package nanifarfalla.app.invoices.domain.criteria;
 
-import android.support.annotation.NonNull;
-
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
 import nanifarfalla.app.invoices.domain.entities.Invoice;

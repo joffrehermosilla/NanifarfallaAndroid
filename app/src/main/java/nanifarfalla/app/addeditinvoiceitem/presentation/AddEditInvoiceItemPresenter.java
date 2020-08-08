@@ -1,8 +1,10 @@
 package nanifarfalla.app.addeditinvoiceitem.presentation;
 
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+//import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;

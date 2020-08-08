@@ -1,11 +1,11 @@
 package nanifarfalla.app.customers.domain.usecases;
 
-import android.support.annotation.NonNull;
-
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import androidx.annotation.NonNull;
 
 import java.util.List;
+
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Abstracción del caso de uso para obtener clientes

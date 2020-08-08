@@ -1,8 +1,8 @@
 package nanifarfalla.app.products.data.datasource.cloud;
 
 import android.os.Handler;
-import android.support.annotation.NonNull;
-
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.google.common.collect.Lists;
 import nanifarfalla.app.products.domain.model.Product;
 import nanifarfalla.app.selection.Query;

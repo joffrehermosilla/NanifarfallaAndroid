@@ -1,14 +1,14 @@
 package nanifarfalla.app.customers.domain.criteria;
 
-import android.support.annotation.NonNull;
-
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.selection.selector.ListSelector;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
-import com.hermosaprogramacion.premium.appproductos.util.CollectionsUtils;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.selection.selector.ListSelector;
+import nanifarfalla.app.selection.specification.MemorySpecification;
+import nanifarfalla.app.util.CollectionsUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;

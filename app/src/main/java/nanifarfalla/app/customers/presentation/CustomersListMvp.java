@@ -1,8 +1,8 @@
 package nanifarfalla.app.customers.presentation;
 
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-
 import java.util.List;
+
+import nanifarfalla.app.customers.domain.entities.Customer;
 
 /**
  * Contrato MVP para la lista de clientes

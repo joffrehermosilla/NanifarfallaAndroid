@@ -1,11 +1,11 @@
 package nanifarfalla.app.customers.data;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
+import java.util.List;
 
 import nanifarfalla.app.customers.domain.entities.Customer;
 import nanifarfalla.app.selection.Query;
-
-import java.util.List;
 
 /**
  * Estandariza los accesos a los clientes

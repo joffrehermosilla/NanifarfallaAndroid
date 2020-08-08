@@ -1,12 +1,13 @@
 package nanifarfalla.app.customers.domain.usecases;
 
-import android.support.annotation.NonNull;
-
-import com.hermosaprogramacion.premium.appproductos.customers.data.ICustomersRepository;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.List;
+
+import nanifarfalla.app.customers.data.ICustomersRepository;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

@@ -1,6 +1,6 @@
 package nanifarfalla.app.customers.data;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import nanifarfalla.app.customers.data.cache.CacheCustomersStore;
 import nanifarfalla.app.selection.Query;

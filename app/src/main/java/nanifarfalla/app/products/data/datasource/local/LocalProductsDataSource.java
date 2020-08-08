@@ -2,8 +2,10 @@ package nanifarfalla.app.products.data.datasource.local;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import nanifarfalla.app.selection.selector.ProviderSelector;
 import nanifarfalla.app.selection.specification.ProviderSpecification;

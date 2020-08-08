@@ -1,8 +1,8 @@
 package nanifarfalla.app.customers.domain.criteria;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.specification.MemorySpecification;
 
 /**
  * Especifica solo coincidencias de clientes por ID

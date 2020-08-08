@@ -1,10 +1,11 @@
 package nanifarfalla.app.customers.domain.criteria;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
 
 import java.util.List;
+
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.specification.MemorySpecification;
 
 /**
  * Created by James on 30/01/2018.

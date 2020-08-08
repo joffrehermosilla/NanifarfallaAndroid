@@ -1,11 +1,11 @@
 package nanifarfalla.app.addeditinvoice.presentation;
 
-import android.support.annotation.NonNull;
-
-import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import androidx.annotation.NonNull;
 
 import java.util.Date;
 import java.util.List;
+
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
 
 /**
  * Contrato MVP para "Crear factura"

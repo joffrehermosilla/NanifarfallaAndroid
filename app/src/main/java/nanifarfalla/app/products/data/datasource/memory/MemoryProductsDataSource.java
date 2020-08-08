@@ -1,16 +1,17 @@
 package nanifarfalla.app.products.data.datasource.memory;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.common.collect.Lists;
-import nanifarfalla.app.selection.Query;
-import nanifarfalla.app.products.domain.criteria.ProductsSelector;
-import nanifarfalla.app.products.domain.model.Product;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+
+import nanifarfalla.app.products.domain.criteria.ProductsSelector;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

@@ -7,9 +7,10 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.external.sqlite.DatabaseContract.Products;
+import androidx.annotation.NonNull;
+
+import nanifarfalla.app.external.sqlite.DatabaseContract.Products;
 
 public class AppProductosProvider extends ContentProvider {
 

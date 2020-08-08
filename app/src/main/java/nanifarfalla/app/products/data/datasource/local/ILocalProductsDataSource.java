@@ -1,13 +1,13 @@
 package nanifarfalla.app.products.data.datasource.local;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
-import nanifarfalla.app.selection.specification.ProviderSpecification;
-import nanifarfalla.app.selection.Query;
-import nanifarfalla.app.products.domain.model.Product;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import java.util.List;
+
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.selection.specification.ProviderSpecification;
 
 /**
  * Representación de fuente de datos local

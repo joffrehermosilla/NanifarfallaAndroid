@@ -1,19 +1,21 @@
 package nanifarfalla.app.customers.presentation;
 
 import android.os.Handler;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.products.presentation.DataLoading;
 
 import java.util.List;
+
+import nanifarfalla.app.R;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.products.presentation.DataLoading;
 
 /**
  * Adaptador para la lista de clientes

@@ -1,6 +1,8 @@
 package nanifarfalla.app.products.domain.usecases;
 
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import nanifarfalla.app.selection.Query;
 import nanifarfalla.app.data.products.IProductsRepository;

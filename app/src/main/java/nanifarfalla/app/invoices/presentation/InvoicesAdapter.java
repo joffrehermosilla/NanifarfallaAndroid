@@ -3,22 +3,24 @@ package nanifarfalla.app.invoices.presentation;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Handler;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.common.base.Preconditions;
+
+import java.util.List;
+import java.util.Locale;
+
 import nanifarfalla.app.R;
 import nanifarfalla.app.invoices.domain.entities.Invoice;
 import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
 import nanifarfalla.app.products.presentation.DataLoading;
 import nanifarfalla.app.util.DateTimeUtils;
-
-import java.util.List;
-import java.util.Locale;
 
 /**
  * Adaptador para la lista de facturas

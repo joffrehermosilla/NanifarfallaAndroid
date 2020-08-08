@@ -2,7 +2,7 @@ package nanifarfalla.app.util;
 
 import android.content.Context;
 
-import com.hermosaprogramacion.premium.appproductos.R;
+import nanifarfalla.app.R;
 
 /**
  * Clase de utilidades para solucionar situaciones en las actividades

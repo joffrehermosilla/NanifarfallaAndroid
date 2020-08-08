@@ -1,12 +1,12 @@
 package nanifarfalla.app.invoices.domain.usecases;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
+import java.util.List;
 
 import nanifarfalla.app.invoices.data.IInvoicesRepository;
 import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
 import nanifarfalla.app.selection.Query;
-
-import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

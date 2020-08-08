@@ -3,16 +3,17 @@ package nanifarfalla.app.products.data;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.annotation.NonNull;
 
-import nanifarfalla.app.selection.Query;
+import androidx.annotation.NonNull;
+
+import java.util.List;
+
 import nanifarfalla.app.login.data.preferences.IUserPreferences;
 import nanifarfalla.app.products.data.datasource.cloud.ICloudProductsDataSource;
 import nanifarfalla.app.products.data.datasource.local.ILocalProductsDataSource;
 import nanifarfalla.app.products.data.datasource.memory.IMemoryProductsDataSource;
 import nanifarfalla.app.products.domain.model.Product;
-
-import java.util.List;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

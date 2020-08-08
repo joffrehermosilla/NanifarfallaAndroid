@@ -1,6 +1,6 @@
 package nanifarfalla.app.invoices.domain.usecases;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import nanifarfalla.app.invoices.domain.entities.Invoice;
 

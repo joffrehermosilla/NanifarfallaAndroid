@@ -4,10 +4,13 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
 
 import nanifarfalla.app.R;
+
+//import android.support.v4.app.DialogFragment;
 
 /**
  * Diálogo para confirmación descarte cambios

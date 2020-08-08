@@ -4,11 +4,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-import com.hermosaprogramacion.premium.appproductos.BaseActivity;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.customers.presentation.CustomersFragment;
-import com.hermosaprogramacion.premium.appproductos.customers.presentation.CustomersPresenter;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
+import nanifarfalla.app.BaseActivity;
+import nanifarfalla.app.R;
+import nanifarfalla.app.customers.presentation.CustomersFragment;
+import nanifarfalla.app.customers.presentation.CustomersPresenter;
+import nanifarfalla.app.di.DependencyProvider;
 
 public class CustomersActivity extends BaseActivity {
 

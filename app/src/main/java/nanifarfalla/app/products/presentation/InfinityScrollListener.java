@@ -1,7 +1,8 @@
 package nanifarfalla.app.products.presentation;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+//import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
