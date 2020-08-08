@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.products.ProductsActivity;
+import nanifarfalla.app.R;
+import nanifarfalla.app.products.ProductsActivity;
 
 /**
  * Fragmento que representa la implementación concreta de la vista del detalle del producto

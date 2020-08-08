@@ -4,10 +4,10 @@ import android.support.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.criteria.CustomersSelector;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.util.DateTimeUtils;
+import nanifarfalla.app.customers.domain.criteria.CustomersSelector;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.util.DateTimeUtils;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

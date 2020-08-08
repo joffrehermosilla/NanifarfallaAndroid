@@ -11,11 +11,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.products.presentation.DataLoading;
-import com.hermosaprogramacion.premium.appproductos.util.DateTimeUtils;
+import nanifarfalla.app.R;
+import nanifarfalla.app.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.products.presentation.DataLoading;
+import nanifarfalla.app.util.DateTimeUtils;
 
 import java.util.List;
 import java.util.Locale;

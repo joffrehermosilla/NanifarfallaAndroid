@@ -2,7 +2,7 @@ package nanifarfalla.app.invoices.domain.usecases;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.domain.entities.Invoice;
 
 /**
  * Interfaz para estandarizar el guardado de facturas

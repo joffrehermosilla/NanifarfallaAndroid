@@ -15,9 +15,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.AddEditInvoiceItemActivity;
-import com.hermosaprogramacion.premium.appproductos.products.ProductsActivity;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoiceitem.AddEditInvoiceItemActivity;
+import nanifarfalla.app.products.ProductsActivity;
 
 /**
  * Fragmento para "Añadir/Editar item de factura"

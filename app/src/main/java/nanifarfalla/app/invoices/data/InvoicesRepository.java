@@ -3,10 +3,10 @@ package nanifarfalla.app.invoices.data;
 import android.support.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.invoices.data.cache.ICacheInvoicesStore;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.invoices.data.cache.ICacheInvoicesStore;
+import nanifarfalla.app.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 

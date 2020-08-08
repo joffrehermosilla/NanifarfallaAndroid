@@ -12,14 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/products_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F0F0F0"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/keyline_1"
+            android:paddingTop="@dimen/keyline_1"
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager"
-            tools:listitem="@layout/item_product" />
+            tools:listitem="@layout/product_item" />
 
         <LinearLayout
             android:id="@+id/noProducts"
@@ -35,7 +37,7 @@
                 android:layout_gravity="center"
                 android:scaleType="fitXY"
                 android:tint="@android:color/darker_gray"
-                android:src="@drawable/ic_package_variant_closed" />
+                app:srcCompat="@drawable/ic_package_variant_closed" />
 
             <TextView
                 android:id="@+id/noProductsText"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical"
+    android:padding="@dimen/keyline_1">
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/keyline_1_minus_8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="Carlos Angulo" />
+
+    <TextView
+        android:id="@+id/customer_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="444 6544" />
+</LinearLayout>

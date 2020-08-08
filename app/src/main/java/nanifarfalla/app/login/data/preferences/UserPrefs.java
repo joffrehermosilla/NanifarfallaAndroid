@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
+import nanifarfalla.app.login.domain.entities.User;
 
 /**
  * Implementación concreta de las preferencias de usuario

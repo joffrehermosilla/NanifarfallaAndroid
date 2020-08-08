@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailFragment;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailPresenter;
+import nanifarfalla.app.R;
+import nanifarfalla.app.di.DependencyProvider;
+import nanifarfalla.app.productdetail.presentation.ProductDetailFragment;
+import nanifarfalla.app.productdetail.presentation.ProductDetailPresenter;
 
 public class ProductDetailActivity extends AppCompatActivity
         implements ProductDetailFragment.FragmentTransmitter {

@@ -20,8 +20,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.invoices.InvoicesActivity;
+import nanifarfalla.app.R;
+import nanifarfalla.app.invoices.InvoicesActivity;
 
 /**
  * Fragmento del login que actúa como immplementación concreta de la vista

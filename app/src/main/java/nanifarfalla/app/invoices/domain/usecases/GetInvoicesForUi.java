@@ -2,9 +2,9 @@ package nanifarfalla.app.invoices.domain.usecases;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.data.IInvoicesRepository;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.invoices.data.IInvoicesRepository;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 

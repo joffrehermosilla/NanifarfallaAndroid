@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.AddEditInvoiceActivity;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.presentation.AddEditInvoiceItemFragment;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.presentation.AddEditInvoiceItemPresenter;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.AddEditInvoiceActivity;
+import nanifarfalla.app.addeditinvoiceitem.presentation.AddEditInvoiceItemFragment;
+import nanifarfalla.app.addeditinvoiceitem.presentation.AddEditInvoiceItemPresenter;
+import nanifarfalla.app.di.DependencyProvider;
 
 public class AddEditInvoiceItemActivity extends AppCompatActivity {
 

@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import android.util.Patterns;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.login.data.IUsersRepository;
+import nanifarfalla.app.login.data.IUsersRepository;
 
 /**
  * Implementación concreta del interactor para el login

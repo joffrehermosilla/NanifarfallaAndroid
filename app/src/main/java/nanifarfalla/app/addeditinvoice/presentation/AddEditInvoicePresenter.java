@@ -3,14 +3,14 @@ package nanifarfalla.app.addeditinvoice.presentation;
 import android.support.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.criteria.CustomerById;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.customers.domain.usecases.IGetCustomers;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.usecases.ISaveInvoice;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.customers.domain.criteria.CustomerById;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.customers.domain.usecases.IGetCustomers;
+import nanifarfalla.app.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.domain.usecases.ISaveInvoice;
+import nanifarfalla.app.selection.Query;
 
 import java.util.Date;
 import java.util.List;

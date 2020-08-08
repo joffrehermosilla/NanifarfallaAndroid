@@ -17,6 +17,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".invoices.InvoicesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".products.ProductsActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/AppTheme.Login" />
+        <activity
+            android:name=".productdetail.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail" />
+        <activity
+            android:name=".customers.CustomersActivity"
+            android:label="@string/title_activity_customers" />
+        <activity
+            android:name=".addeditinvoice.AddEditInvoiceActivity"
+            android:label="@string/add_invoice" />
+        <activity
+            android:name=".addeditinvoiceitem.AddEditInvoiceItemActivity"
+            android:label="@string/add_invoice_item" />
+
+        <provider
+            android:name=".external.sqlite.AppProductosProvider"
+            android:authorities="nanifarfalla.app"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

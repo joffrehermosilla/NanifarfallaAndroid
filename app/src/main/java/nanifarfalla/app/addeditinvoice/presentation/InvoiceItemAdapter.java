@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
 
 import java.util.List;
 import java.util.Locale;

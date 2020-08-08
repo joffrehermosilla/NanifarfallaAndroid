@@ -2,8 +2,8 @@ package nanifarfalla.app.addeditinvoiceitem.data;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceItem;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
 
 import java.util.List;
 

@@ -6,4 +6,78 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_products_message">No hay productos todavía.</string>
     <string name="network_error">Error de conexión. Habilita la red e intentalo de nuevo</string>
+
+
+    <!-- Errores Login -->
+    <string name="error_login">Correo inválido</string>
+    <string name="error_password">Constraseña inválida</string>
+    <string name="error_network">La red no está disponible</string>
+
+    <string name="title_activity_product_detail">Producto</string>
+
+    <string name="label_product_description">Descripción</string>
+
+    <!-- Nav Drawer -->
+    <string name="orders_nav_item">Facturas</string>
+    <string name="products_nav_item">Productos</string>
+    <string name="customers_nav_item">Clientes</string>
+    <string name="settings_nav_item">Ajustes</string>
+    <string name="log_out_nav_item">Cerrar Sesión</string>
+
+    <string name="no_customers_message"><b>Añade clientes</b> para comenzar a administrar tu negocio</string>
+    <string name="no_invoices_message"><b>Añade facturas</b> para comenzar a administrar tu negocio</string>
+
+    <string name="title_activity_customers">Clientes</string>
+
+    <!-- Acciones Toolbar -->
+    <string name="action_search">Buscar</string>
+    <string name="action_save_invoice">Guardar</string>
+
+    <string name="title_activity_invoices">Facturas</string>
+
+    <string name="invoices">Facturas</string>
+    <string name="add_invoice">Nueva Factura</string>
+    <string name="edit_invoice">Editar Factura</string>
+    <string name="add_invoice_item">Añadir Nuevo Ítem</string>
+    <string name="pick_customer">Seleccione un cliente</string>
+    <string name="pick_product">Seleccione Un Producto</string>
+    <string name="products">Productos</string>
+
+    <string name="message_discard_changes_dialog">¿Deseas descartar cambios?</string>
+    <string name="message_successfully_saved_invoice">Factura guardada correctamente</string>
+
+    <string name="label_product_name">Producto</string>
+    <string name="label_quantity">Cantidad</string>
+    <string name="hint_select_product">Seleccione un producto</string>
+    <string name="default_quantity_product">1</string>
+    <string name="error_select_product">Seleccione un producto</string>
+    <string name="error_quantity">Escriba una cantidad que no exceda las existencias</string>
+
+    <string name="action_save_invoice_item">Guardar</string>
+    <string name="invoice_number_label">Número de factura</string>
+    <string name="invoice_number_field">Será autogenerado</string>
+    <string name="customer_field">Selecciona un cliente</string>
+    <string name="customer_label">Cliente</string>
+    <string name="creation_date_label">Fecha de creación</string>
+    <string name="invoice_item_label">Items</string>
+    <string name="add_item_button">Añadir item</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="tax_label">Impuesto</string>
+    <string name="total_label">Total</string>
+    <string name="error_empty_product">No se encontró el producto</string>
+
+    <string name="open_drawer_desc">Abrir nav drawer</string>
+    <string name="close_drawer_desc">Cerrar nav drawer</string>
+
+    <string name="edit_invoice_item">Editar Ítem De Factura</string>
+    <string name="product_stock">Existencias: %d</string>
+
+    <string name="no_data">Sin datos</string>
+
+    <plurals name="item_plurals">
+        <item quantity="one">1 ítem</item>
+        <item quantity="other">%d ítems</item>
+    </plurals>
+
+
 </resources>

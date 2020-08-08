@@ -6,14 +6,14 @@ import android.support.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceItem;
-import com.hermosaprogramacion.premium.appproductos.productdetail.domain.criteria.ProductByCode;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-import com.hermosaprogramacion.premium.appproductos.products.domain.usecases.IGetProducts;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
+import nanifarfalla.app.productdetail.domain.criteria.ProductByCode;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.products.domain.usecases.IGetProducts;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 

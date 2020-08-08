@@ -2,7 +2,7 @@ package nanifarfalla.app.addeditinvoice.presentation;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
 
 import java.util.Date;
 import java.util.List;

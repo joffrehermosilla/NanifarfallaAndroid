@@ -2,12 +2,12 @@ package nanifarfalla.app.invoices.presentation;
 
 import android.app.Activity;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.InvoicesActivity;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.criteria.InvoicesUiNoFilter;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.criteria.InvoicesUiSelector;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.usecases.IGetInvoicesForUi;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.invoices.InvoicesActivity;
+import nanifarfalla.app.invoices.domain.criteria.InvoicesUiNoFilter;
+import nanifarfalla.app.invoices.domain.criteria.InvoicesUiSelector;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.invoices.domain.usecases.IGetInvoicesForUi;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 

@@ -7,11 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.presentation.AddEditInvoiceFragment;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.presentation.AddEditInvoicePresenter;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.presentation.DiscardChangesDialog;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.presentation.AddEditInvoiceFragment;
+import nanifarfalla.app.addeditinvoice.presentation.AddEditInvoicePresenter;
+import nanifarfalla.app.addeditinvoice.presentation.DiscardChangesDialog;
+import nanifarfalla.app.di.DependencyProvider;
 
 public class AddEditInvoiceActivity extends AppCompatActivity
         implements DiscardChangesDialog.DiscardDialogListener {

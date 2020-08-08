@@ -1,10 +1,10 @@
 package nanifarfalla.app.productdetail.presentation;
 
 import com.google.common.base.Strings;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.productdetail.domain.criteria.ProductByCode;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-import com.hermosaprogramacion.premium.appproductos.products.domain.usecases.IGetProducts;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.productdetail.domain.criteria.ProductByCode;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.products.domain.usecases.IGetProducts;
 
 import java.util.List;
 

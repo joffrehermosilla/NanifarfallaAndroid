@@ -3,11 +3,11 @@ package nanifarfalla.app.invoices;
 import android.os.Bundle;
 import android.view.Menu;
 
-import com.hermosaprogramacion.premium.appproductos.BaseActivity;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
-import com.hermosaprogramacion.premium.appproductos.invoices.presentation.InvoicesFragment;
-import com.hermosaprogramacion.premium.appproductos.invoices.presentation.InvoicesPresenter;
+import nanifarfalla.app.BaseActivity;
+import nanifarfalla.app.R;
+import nanifarfalla.app.di.DependencyProvider;
+import nanifarfalla.app.invoices.presentation.InvoicesFragment;
+import nanifarfalla.app.invoices.presentation.InvoicesPresenter;
 
 public class InvoicesActivity extends BaseActivity{
 

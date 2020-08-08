@@ -1,10 +1,10 @@
 package nanifarfalla.app.invoices.data.cache;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-
 import java.util.List;
+
+import nanifarfalla.app.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Estandariza las operaciones estandar en caché sobre las facturas

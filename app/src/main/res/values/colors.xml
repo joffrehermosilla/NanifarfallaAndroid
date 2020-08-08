@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">#AA6D82</color>
     <color name="colorPrimaryDark">#476764</color>
     <color name="colorAccent">#FFC107</color>
+    <!-- grayscale -->
+    <color name="white"     >#FFFFFF</color>
+    <color name="gray_light">#dbdbdb</color>
+    <color name="gray"      >#939393</color>
+    <color name="gray_dark" tools:keep="@color/gray_dark">#5F5F5F</color>
+    <color name="black"     >#323232</color>
+
+    <color name="state_draft">#5A4A3B</color>
+    <color name="state_paid">#008991</color>
+    <color name="state_sent">#0E79BF</color>
+    <color name="state_canceled">#EE3F22</color>
 </resources>

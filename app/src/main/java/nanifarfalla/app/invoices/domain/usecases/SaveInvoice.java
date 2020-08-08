@@ -3,8 +3,8 @@ package nanifarfalla.app.invoices.domain.usecases;
 import android.support.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.invoices.data.IInvoicesRepository;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.Invoice;
+import nanifarfalla.app.invoices.data.IInvoicesRepository;
+import nanifarfalla.app.invoices.domain.entities.Invoice;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

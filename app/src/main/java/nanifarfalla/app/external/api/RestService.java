@@ -1,10 +1,9 @@
 package nanifarfalla.app.external.api;
 
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-
 import java.util.List;
 
+import nanifarfalla.app.login.domain.entities.User;
+import nanifarfalla.app.products.domain.model.Product;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Header;

@@ -1,6 +1,6 @@
 package nanifarfalla.app.login.data.preferences;
 
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
+import nanifarfalla.app.login.domain.entities.User;
 
 /**
  * Representación de las preferencias de usuarios

@@ -4,8 +4,8 @@ package nanifarfalla.app.addeditinvoice.presentation;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.NonNull
+import com.google.android.material.textfield.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.RecyclerView;
@@ -19,12 +19,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.AddEditInvoiceActivity;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.AddEditInvoiceItemActivity;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.domain.entities.InvoiceItemUi;
-import com.hermosaprogramacion.premium.appproductos.customers.CustomersActivity;
-import com.hermosaprogramacion.premium.appproductos.util.DateTimeUtils;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.AddEditInvoiceActivity;
+import nanifarfalla.app.addeditinvoiceitem.AddEditInvoiceItemActivity;
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.customers.CustomersActivity;
+import nanifarfalla.app.util.DateTimeUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -98,7 +98,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
         View root = inflater.inflate(R.layout.fragment_add_invoice, container, false);
 
         // Cliente
-        mCustomerFieldWrapper = (TextInputLayout) root.findViewById(R.id.customer_text_input);
+        mCustomerFieldWrapper =  root.findViewById(R.id.customer_text_input);
         mCustomerField = (TextView) root.findViewById(R.id.customer_field);
         mCustomerField.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,7 +114,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
         mDateField.setText(currentDateString);
 
         // Botón ADD
-        mAddItemButtonWrapper = (TextInputLayout) root.findViewById(R.id.add_item_button_wrapper);
+        mAddItemButtonWrapper =  root.findViewById(R.id.add_item_button_wrapper);
         mAddItemButton = (Button) root.findViewById(R.id.add_item_button);
         mAddItemButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,7 +124,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
         });
 
         // Items
-        mInvoiceItemsList = (RecyclerView) root.findViewById(R.id.invoice_items_list);
+        mInvoiceItemsList = root.findViewById(R.id.invoice_items_list);
         DividerItemDecoration decoration = new DividerItemDecoration(mInvoiceItemsList.getContext(),
                 DividerItemDecoration.VERTICAL);
         mInvoiceItemAdapter = new InvoiceItemAdapter(getContext(),

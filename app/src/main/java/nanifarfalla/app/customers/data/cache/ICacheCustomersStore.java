@@ -1,9 +1,9 @@
 package nanifarfalla.app.customers.data.cache;
 
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-
 import java.util.List;
+
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Interfaz con operaciones estandar en caché sobre los clientes

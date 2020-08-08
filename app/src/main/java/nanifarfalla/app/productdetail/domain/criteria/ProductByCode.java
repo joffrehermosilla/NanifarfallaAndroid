@@ -4,10 +4,10 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.ProviderSpecification;
-import com.hermosaprogramacion.premium.appproductos.external.sqlite.DatabaseContract.Products;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
+import nanifarfalla.app.selection.specification.ProviderSpecification;
+import nanifarfalla.app.external.sqlite.DatabaseContract.Products;
+import nanifarfalla.app.selection.specification.MemorySpecification;
+import nanifarfalla.app.products.domain.model.Product;
 
 /**
  * Criterio para obtener productos por ID

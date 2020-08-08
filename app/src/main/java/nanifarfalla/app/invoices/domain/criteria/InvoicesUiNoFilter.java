@@ -1,7 +1,7 @@
 package nanifarfalla.app.invoices.domain.criteria;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.selection.specification.MemorySpecification;
 
 /**
  * Especificación para todos las facturas parciales

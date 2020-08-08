@@ -1,8 +1,8 @@
 package nanifarfalla.app.invoices.presentation;
 
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-
 import java.util.List;
+
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
 
 /**
  * Contrato MVP para la lista de facturas

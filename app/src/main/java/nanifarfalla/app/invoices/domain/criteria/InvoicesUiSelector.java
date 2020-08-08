@@ -4,11 +4,11 @@ import android.support.annotation.NonNull;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.selection.selector.ListSelector;
-import com.hermosaprogramacion.premium.appproductos.selection.specification.MemorySpecification;
-import com.hermosaprogramacion.premium.appproductos.util.CollectionsUtils;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.selection.selector.ListSelector;
+import nanifarfalla.app.selection.specification.MemorySpecification;
+import nanifarfalla.app.util.CollectionsUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,7 +1,7 @@
 package nanifarfalla.app.login.presentation;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.login.domain.usecases.ILoginInteractor;
+import nanifarfalla.app.login.domain.usecases.ILoginInteractor;
 
 /**
  * Presentador de la UI del Login

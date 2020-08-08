@@ -15,11 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.addeditinvoice.AddEditInvoiceActivity;
-import com.hermosaprogramacion.premium.appproductos.invoices.InvoicesActivity;
-import com.hermosaprogramacion.premium.appproductos.invoices.domain.entities.InvoiceUi;
-import com.hermosaprogramacion.premium.appproductos.products.presentation.InfinityScrollListener;
+import nanifarfalla.app.R;
+import nanifarfalla.app.addeditinvoice.AddEditInvoiceActivity;
+import nanifarfalla.app.invoices.InvoicesActivity;
+import nanifarfalla.app.invoices.domain.entities.InvoiceUi;
+import nanifarfalla.app.products.presentation.InfinityScrollListener;
 
 import java.util.ArrayList;
 import java.util.List;

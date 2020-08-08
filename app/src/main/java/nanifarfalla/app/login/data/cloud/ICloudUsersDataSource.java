@@ -1,6 +1,6 @@
 package nanifarfalla.app.login.data.cloud;
 
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
+import nanifarfalla.app.login.domain.entities.User;
 
 /**
  * Representación de dependencia entre el interactor de login y el controlador de la API

@@ -2,8 +2,8 @@ package nanifarfalla.app.customers.data;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.customers.data.cache.CacheCustomersStore;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.customers.data.cache.CacheCustomersStore;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

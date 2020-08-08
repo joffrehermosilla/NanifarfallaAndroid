@@ -6,10 +6,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.login.data.cloud.ICloudUsersDataSource;
-import com.hermosaprogramacion.premium.appproductos.login.data.preferences.IUserPreferences;
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
+import nanifarfalla.app.R;
+import nanifarfalla.app.login.data.cloud.ICloudUsersDataSource;
+import nanifarfalla.app.login.data.preferences.IUserPreferences;
+import nanifarfalla.app.login.domain.entities.User;
 
 /**
  * Implementación concreta del repositorio de usuarios

@@ -2,9 +2,9 @@ package nanifarfalla.app.login.data.cloud;
 
 import android.util.Base64;
 
-import com.hermosaprogramacion.premium.appproductos.external.api.ErrorResponse;
-import com.hermosaprogramacion.premium.appproductos.external.api.RestService;
-import com.hermosaprogramacion.premium.appproductos.login.domain.entities.User;
+import nanifarfalla.app.external.api.ErrorResponse;
+import nanifarfalla.app.external.api.RestService;
+import nanifarfalla.app.login.domain.entities.User;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;

@@ -2,8 +2,8 @@ package nanifarfalla.app.customers.data;
 
 import android.support.annotation.NonNull;
 
-import com.hermosaprogramacion.premium.appproductos.customers.domain.entities.Customer;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
+import nanifarfalla.app.customers.domain.entities.Customer;
+import nanifarfalla.app.selection.Query;
 
 import java.util.List;
 
