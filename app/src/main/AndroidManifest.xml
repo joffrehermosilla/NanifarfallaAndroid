@@ -10,6 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".RX09HotAndColdActivity"></activity>
+        <activity android:name=".RX08BackPressureActivity" />
+        <activity android:name=".RX07BindingActivity" />
+        <activity android:name=".RX06BusActivity" />
+        <activity android:name=".RX05SubjectActivity" />
+        <activity android:name=".RX04TiposObservablesActivity" />
+        <activity android:name=".RX03OperadoresActivity" />
+        <activity android:name=".RX02CompositeDisposableActivity" />
+        <activity android:name=".RX01DisposableActivity" />
+        <activity android:name=".RX00IntroActivity" />
+
+
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
