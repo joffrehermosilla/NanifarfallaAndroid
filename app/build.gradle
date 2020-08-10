@@ -14,7 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -124,6 +124,8 @@ dependencies {
    // implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
     implementation "com.jakewharton.rxbinding4:rxbinding:$rootProject.rxbinding4"
 
+
+  //  implementation 'com.android.support:multidex:1.0.3'
 
 }
 //nox_adb.exe connect 127.0.0.1:62001.
