@@ -61,7 +61,8 @@
                 android:ems="10"
                 android:hint="@string/default_quantity_product"
                 android:inputType="number"
-                android:text="@string/default_quantity_product" />
+                android:text="@string/default_quantity_product"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView

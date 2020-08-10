@@ -2,21 +2,23 @@ package nanifarfalla.app.products.data.datasource.local;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
-//import android.support.annotation.NonNull;
-//import android.support.annotation.Nullable;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import nanifarfalla.app.selection.selector.ProviderSelector;
-import nanifarfalla.app.selection.specification.ProviderSpecification;
-import nanifarfalla.app.selection.Query;
+import java.util.List;
+
 import nanifarfalla.app.external.sqlite.DatabaseContract.Products;
 import nanifarfalla.app.products.domain.criteria.ProductsSelector;
 import nanifarfalla.app.products.domain.model.Product;
-
-import java.util.List;
+import nanifarfalla.app.selection.Query;
+import nanifarfalla.app.selection.selector.ProviderSelector;
+import nanifarfalla.app.selection.specification.ProviderSpecification;
 
 import static com.google.common.base.Preconditions.checkNotNull;
+
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
 
 /**
  * Implementación concreta del almacén de datos
@@ -69,7 +71,7 @@ public class LocalProductsDataSource implements ILocalProductsDataSource {
         values.put(Products.DESCRIPTION, product.getDescription());
         values.put(Products.BRAND, product.getBrand());
         values.put(Products.PRICE, product.getPrice());
-        values.put(Products.UNITS_IN_STOCK, product.getUnitsInStock());
+        values.put(Products.UNITS_IN_STOCK, (byte[]) product.getUnitsInStock() );
         values.put(Products.IMAGE_URL, product.getImageUrl());
 
         AsyncOpsProductsHandler handler = new AsyncOpsProductsHandler(mContentResolver);

@@ -1,17 +1,25 @@
 package nanifarfalla.app.products.presentation;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.di.DependencyProvider;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailFragment;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailPresenter;
-import com.hermosaprogramacion.premium.appproductos.util.ActivityUtils;
+
+import nanifarfalla.app.R;
+import nanifarfalla.app.di.DependencyProvider;
+import nanifarfalla.app.productdetail.presentation.ProductDetailFragment;
+import nanifarfalla.app.productdetail.presentation.ProductDetailPresenter;
+import nanifarfalla.app.products.ProductsActivity;
+import nanifarfalla.app.util.ActivityUtils;
+
+//import android.support.v4.app.FragmentActivity;
+//import android.support.v4.app.FragmentManager;
+//import android.support.v7.app.AppCompatActivity;
 
 /**
  * Crea los fragmentos de la vista y gestiona el comportamiento de sus presentadores
@@ -29,7 +37,7 @@ public class ProductsMvpController {
 
     private ProductsPresenter mProductsPresenter;
 
-    private ProductsMvpController(@NonNull FragmentActivity productstActivity,
+    private ProductsMvpController(@NonNull ProductsActivity productstActivity,
                                   @Nullable String productCode,
                                   boolean actionPick) {
         mProductstActivity = productstActivity;
@@ -37,7 +45,7 @@ public class ProductsMvpController {
         mActionPick = actionPick;
     }
 
-    public static ProductsMvpController createProductsMvp(@NonNull AppCompatActivity productstActivity,
+    public static ProductsMvpController createProductsMvp(@NonNull ProductsActivity productstActivity,
                                                           @Nullable String productCode,
                                                           boolean actionPick) {
         Preconditions.checkNotNull(productstActivity);

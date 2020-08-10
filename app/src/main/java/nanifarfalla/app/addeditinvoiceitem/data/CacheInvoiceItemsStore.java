@@ -7,13 +7,6 @@ import com.google.common.base.Preconditions;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
-import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
-import nanifarfalla.app.addeditinvoice.domain.entities.ProductUi;
-import nanifarfalla.app.products.data.IProductsRepository;
-import nanifarfalla.app.products.domain.criteria.ProductsByCode;
-import nanifarfalla.app.products.domain.model.Product;
-import nanifarfalla.app.selection.Query;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,6 +14,14 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.addeditinvoice.domain.entities.ProductUi;
+import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
+import nanifarfalla.app.products.data.IProductsRepository;
+import nanifarfalla.app.products.domain.criteria.ProductsByCode;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
 
 /**
  * Caché para items de factura
@@ -200,7 +201,7 @@ public class CacheInvoiceItemsStore implements ICacheInvoiceItemsStore {
     private InvoiceItemUi joinInvoiceItemAndProduct(InvoiceItem invoiceItem, Product product) {
         ProductUi productUi = new ProductUi(
                 product.getName(),
-                product.getUnitsInStock(),
+                (Integer) product.getUnitsInStock(),
                 product.getImageUrl());
         InvoiceItemUi itemUi = new InvoiceItemUi(
                 invoiceItem.getProductId(),

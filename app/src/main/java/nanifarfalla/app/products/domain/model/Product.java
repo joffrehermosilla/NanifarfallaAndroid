@@ -37,6 +37,9 @@ public class Product {
         mImageUrl = imageUrl;
     }
 
+    public Product(String code, String name, String description, String brand, float price, int unitsInStock, String imageUrl) {
+    }
+
     public String getCode() {
         return mCode;
     }

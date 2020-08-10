@@ -1,13 +1,14 @@
 package nanifarfalla.app.products.presentation;
 
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.selection.Query;
-import com.hermosaprogramacion.premium.appproductos.login.data.IUsersRepository;
-import com.hermosaprogramacion.premium.appproductos.products.domain.criteria.ProductsNoFilter;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-import com.hermosaprogramacion.premium.appproductos.products.domain.usecases.IGetProducts;
 
 import java.util.List;
+
+import nanifarfalla.app.login.data.IUsersRepository;
+import nanifarfalla.app.products.domain.criteria.ProductsNoFilter;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.products.domain.usecases.IGetProducts;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

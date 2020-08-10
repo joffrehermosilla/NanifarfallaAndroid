@@ -4,29 +4,37 @@ package nanifarfalla.app.products.presentation;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.R;
-import com.hermosaprogramacion.premium.appproductos.login.LoginActivity;
-import com.hermosaprogramacion.premium.appproductos.productdetail.ProductDetailActivity;
-import com.hermosaprogramacion.premium.appproductos.products.ProductsActivity;
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-import com.hermosaprogramacion.premium.appproductos.util.ActivityUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import nanifarfalla.app.R;
+import nanifarfalla.app.login.LoginActivity;
+import nanifarfalla.app.productdetail.ProductDetailActivity;
+import nanifarfalla.app.products.ProductsActivity;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.util.ActivityUtils;
+
+//import android.support.v4.app.FragmentActivity;
+//import android.support.v4.content.ContextCompat;
+//import android.support.v4.widget.SwipeRefreshLayout;
+//import android.support.v7.widget.LinearLayoutManager;
+//import android.support.v7.widget.RecyclerView;
 
 /**
  * Fragmento para mostrar la lista de productos

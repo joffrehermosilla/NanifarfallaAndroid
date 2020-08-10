@@ -107,12 +107,7 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
         // Cliente
         mCustomerFieldWrapper =  root.findViewById(R.id.customer_text_input);
         mCustomerField = (TextView) root.findViewById(R.id.customer_field);
-        mCustomerField.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPresenter.selectCustomer();
-            }
-        });
+        mCustomerField.setOnClickListener( view -> mPresenter.selectCustomer() );
 
         // Fecha
         mDateField = (TextView) root.findViewById(R.id.invoice_date_field);
@@ -123,19 +118,14 @@ public class AddEditInvoiceFragment extends Fragment implements AddEditInvoiceMv
         // Botón ADD
         mAddItemButtonWrapper =  root.findViewById(R.id.add_item_button_wrapper);
         mAddItemButton = (Button) root.findViewById(R.id.add_item_button);
-        mAddItemButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPresenter.addNewInvoiceItem();
-            }
-        });
+        mAddItemButton.setOnClickListener( view -> mPresenter.addNewInvoiceItem() );
 
         // Items
         mInvoiceItemsList = root.findViewById(R.id.invoice_items_list);
         DividerItemDecoration decoration = new DividerItemDecoration(mInvoiceItemsList.getContext(),
                 DividerItemDecoration.VERTICAL);
         mInvoiceItemAdapter = new InvoiceItemAdapter(getContext(),
-                new ArrayList<InvoiceItemUi>(0),
+                new ArrayList<>( 0 ),
                 new InvoiceItemAdapter.ItemListener() {
                     @Override
                     public void onItemClick(InvoiceItemUi invoiceItem) {

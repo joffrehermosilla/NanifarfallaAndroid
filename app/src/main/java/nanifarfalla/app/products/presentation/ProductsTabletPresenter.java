@@ -1,11 +1,12 @@
 package nanifarfalla.app.products.presentation;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import com.google.common.base.Preconditions;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailMvp;
-import com.hermosaprogramacion.premium.appproductos.productdetail.presentation.ProductDetailPresenter;
+import nanifarfalla.app.productdetail.presentation.ProductDetailMvp;
+import nanifarfalla.app.productdetail.presentation.ProductDetailPresenter;
 
 /**
  * Presentador para el manejo de la UI master-detail de productos

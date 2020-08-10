@@ -1,8 +1,8 @@
 package nanifarfalla.app.products.presentation;
 
-import com.hermosaprogramacion.premium.appproductos.products.domain.model.Product;
-
 import java.util.List;
+
+import nanifarfalla.app.products.domain.model.Product;
 
 /**
  * Contrato MVP para la lista de productos

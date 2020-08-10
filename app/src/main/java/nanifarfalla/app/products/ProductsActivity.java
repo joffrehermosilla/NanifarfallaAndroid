@@ -1,78 +1,83 @@
 package nanifarfalla.app.products;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toolbar;
+import android.view.View;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
+//import nanifarfalla.app.BaseActivity;
+import nanifarfalla.app.MainActivity;
+import nanifarfalla.app.products.presentation.ProductsMvpController;
 import nanifarfalla.app.R;
 
-//import android.support.v4.app.Fragment;
-//import android.support.v7.app.AppCompatActivity;
-//import android.support.v7.widget.Toolbar;
+public class ProductsActivity extends MainActivity {
+    public final static String ACTION_PICK_PRODUCT
+            = "com.hermosaprogramacion.action.ACTION_PICK_PRODUCT";
+    public static final String EXTRA_PRODUCT_ID = "com.hermosaprogramacion.EXTRA_PRODUCT_ID";
 
-public class ProductsActivity extends AppCompatActivity {
+    private final static String BUNDLE_PRODUCT_CODE = "BUNDLE_PRODUCT_CODE";
 
-    private Toolbar mToolbar;
-    private ProductsFragment mProductsFragment;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private ProductsMvpController mProductsMvpController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_main);
 
-        // Referencias UI
-        mToolbar = (Toolbar) findViewById( R.id.toolbar);
-        mProductsFragment = (ProductsFragment) getSupportFragmentManager().findFragmentById( R.id.products_container);
+        boolean actionPick = isActionPick();
 
-        // Setup
-        setUpToolbar();
-        setUpProductsFragment();
+        setContentView(actionPick ? R.layout.activity_products_picking : R.layout.activity_products);
 
+        setTitle(actionPick ? R.string.pick_product : R.string.products);
 
-    }
-
-    private void setUpToolbar() {
-        setSupportActionBar(mToolbar);
-    }
-
-    private void setSupportActionBar(Toolbar mToolbar) {
-    }
-
-    private void setUpProductsFragment() {
-        if (mProductsFragment == null) {
-            mProductsFragment = ProductsFragment.newInstance();
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add( R.id.products_container, mProductsFragment)
-                    .commit();
+        // Obtener código del producto guardado en cambios de configuración.
+        // Este no se usará a menos que uses master-detail en ambas orientaciones.
+        String productCode = null;
+        if (savedInstanceState != null) {
+            productCode = savedInstanceState.getString(BUNDLE_PRODUCT_CODE);
         }
+
+        // Crear controlador de productos
+        mProductsMvpController =
+                ProductsMvpController.createProductsMvp(this, productCode,actionPick );
+
+    }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString(BUNDLE_PRODUCT_CODE, mProductsMvpController.getProductCode());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        showActionPickNavigation();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate( R.menu.menu_products, menu);
+        getMenuInflater().inflate(R.menu.products_menu, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    protected NavDrawerItemEnum getNavDrawerItem() {
+        return NavDrawerItemEnum.PRODUCTS;
+    }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    private boolean isActionPick() {
+        return ACTION_PICK_PRODUCT.equals(getIntent().getAction());
+    }
+
+    private void showActionPickNavigation() {
+        if (isActionPick()) {
+            setToolbarAsUp(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onBackPressed();
+                }
+            });
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }

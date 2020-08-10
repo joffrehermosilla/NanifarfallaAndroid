@@ -4,10 +4,6 @@ package nanifarfalla.app.addeditinvoiceitem.presentation;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.support.design.widget.TextInputLayout;
-import com.google.android.material.textfield.TextInputLayout;
-//import android.support.v4.app.Fragment;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,10 +12,17 @@ import android.view.ViewParent;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.common.base.Preconditions;
+
 import nanifarfalla.app.R;
 import nanifarfalla.app.addeditinvoiceitem.AddEditInvoiceItemActivity;
 import nanifarfalla.app.products.ProductsActivity;
+
+//import android.support.design.widget.TextInputLayout;
+//import android.support.v4.app.Fragment;
 
 /**
  * Fragmento para "Añadir/Editar item de factura"
@@ -61,12 +64,7 @@ public class AddEditInvoiceItemFragment extends Fragment implements AddEditInvoi
         mProductFieldWrapper = (TextInputLayout) root.findViewById(R.id.product_selection_field_wrapper);
 
         mProductField = (TextView) root.findViewById(R.id.product_selection_field);
-        mProductField.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPresenter.selectProduct();
-            }
-        });
+        mProductField.setOnClickListener( view -> mPresenter.selectProduct() );
 
         mQuantityFieldWrapper = (TextInputLayout) root.findViewById(R.id.quantity_field_wrapper);
 
@@ -104,7 +102,7 @@ public class AddEditInvoiceItemFragment extends Fragment implements AddEditInvoi
         if (AddEditInvoiceItemActivity.REQUEST_PICK_PRODUCT == requestCode
                 && Activity.RESULT_OK == resultCode) {
 
-            mSelectedProductId = data.getStringExtra(ProductsActivity.EXTRA_PRODUCT_ID);
+            mSelectedProductId = data.getStringExtra( ProductsActivity.EXTRA_PRODUCT_ID);
             mPresenter.manageProductPickingResult(mSelectedProductId);
         }
     }

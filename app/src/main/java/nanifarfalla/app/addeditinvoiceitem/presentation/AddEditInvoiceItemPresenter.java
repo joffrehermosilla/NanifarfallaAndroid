@@ -1,23 +1,26 @@
 package nanifarfalla.app.addeditinvoiceitem.presentation;
 
 import android.content.res.Resources;
-//import android.support.annotation.NonNull;
+
 import androidx.annotation.NonNull;
-//import android.support.annotation.Nullable;
 import androidx.annotation.Nullable;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
+
+import java.util.List;
+
 import nanifarfalla.app.R;
-import nanifarfalla.app.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
 import nanifarfalla.app.addeditinvoice.domain.entities.InvoiceItemUi;
+import nanifarfalla.app.addeditinvoiceitem.data.ICacheInvoiceItemsStore;
 import nanifarfalla.app.invoices.domain.entities.InvoiceItem;
 import nanifarfalla.app.productdetail.domain.criteria.ProductByCode;
 import nanifarfalla.app.products.domain.model.Product;
 import nanifarfalla.app.products.domain.usecases.IGetProducts;
 import nanifarfalla.app.selection.Query;
 
-import java.util.List;
+//import android.support.annotation.NonNull;
+//import android.support.annotation.Nullable;
 
 /**
  * Presentador de "Añadir/Editar items de factura"
@@ -128,7 +131,7 @@ public class AddEditInvoiceItemPresenter implements AddEditInvoiceItemMvp.Presen
                 Product selectedProduct = products.get(0);
 
                 mItemPrice = selectedProduct.getPrice();
-                mStock = selectedProduct.getUnitsInStock();
+                mStock = (int) selectedProduct.getUnitsInStock();
 
                 showItem(selectedProduct.getName(), mStock, 1);
             }

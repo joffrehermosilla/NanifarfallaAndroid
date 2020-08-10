@@ -188,7 +188,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 launchSectionActivity(InvoicesActivity.class);
                 break;
             case R.id.products_nav_item:
-                launchSectionActivity(ProductsActivity.class);
+                launchSectionActivity( ProductsActivity.class);
                 break;
             case R.id.customers_nav_item:
                 launchSectionActivity(CustomersActivity.class);

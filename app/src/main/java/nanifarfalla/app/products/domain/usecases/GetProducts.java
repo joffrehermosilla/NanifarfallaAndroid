@@ -2,13 +2,13 @@ package nanifarfalla.app.products.domain.usecases;
 
 //import android.support.annotation.NonNull;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import nanifarfalla.app.selection.Query;
-import nanifarfalla.app.data.products.IProductsRepository;
-import nanifarfalla.app.products.domain.model.Product;
 
 import java.util.List;
+
+import nanifarfalla.app.products.data.IProductsRepository;
+import nanifarfalla.app.products.data.ProductsRepository;
+import nanifarfalla.app.products.domain.model.Product;
+import nanifarfalla.app.selection.Query;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -20,7 +20,7 @@ public class GetProducts implements IGetProducts {
     private IProductsRepository mProductsRepository;
 
 
-    public GetProducts(IProductsRepository productsRepository) {
+    public GetProducts(ProductsRepository productsRepository) {
         mProductsRepository = checkNotNull(productsRepository,
                 "productsRepository no puede ser null");
     }

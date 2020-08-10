@@ -1,4 +1,4 @@
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     app:contentPadding="@dimen/keyline_1"
-    tools:context="com.hermosaprogramacion.premium.appproductos.addeditinvoiceitem.presentation.AddEditInvoiceItemFragment">
+    tools:context="nanifarfalla.app.addeditinvoiceitem.presentation.AddEditInvoiceItemFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:text="@string/label_product_name"
             android:textColor="@color/colorPrimary" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/product_selection_field_wrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -37,7 +37,7 @@
                 android:focusable="false"
                 android:hint="@string/hint_select_product"
                 android:maxLines="1" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/quantity_label"
@@ -47,7 +47,7 @@
             android:text="@string/label_quantity"
             android:textColor="@color/colorPrimary" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/quantity_field_wrapper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 android:hint="@string/default_quantity_product"
                 android:inputType="number"
                 android:text="@string/default_quantity_product" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/stock_text"
@@ -74,5 +74,5 @@
 
     </LinearLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.cardview.widget.CardView>
 
