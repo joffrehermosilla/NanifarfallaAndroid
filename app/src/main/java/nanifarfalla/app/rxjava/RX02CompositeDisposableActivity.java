@@ -1,6 +1,7 @@
 package nanifarfalla.app.rxjava;
 
 //import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 
@@ -11,6 +12,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
+import nanifarfalla.app.R;
 
 public class RX02CompositeDisposableActivity extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class RX02CompositeDisposableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx02_composite_disposable);
+        setContentView( R.layout.activity_rx02_composite_disposable);
 
         compositeDisposable = new CompositeDisposable();
 

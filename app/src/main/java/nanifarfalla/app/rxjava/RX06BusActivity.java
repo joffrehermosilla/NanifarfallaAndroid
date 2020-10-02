@@ -2,6 +2,7 @@ package nanifarfalla.app.rxjava;
 
 
 //import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.CompositeDisposable;
+import nanifarfalla.app.R;
 
 
 public class RX06BusActivity extends AppCompatActivity {
@@ -24,7 +26,7 @@ public class RX06BusActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx06_bus);
+        setContentView( R.layout.activity_rx06_bus);
 
         fragment = new RX06BusFragment();
         transaction = getSupportFragmentManager().beginTransaction();

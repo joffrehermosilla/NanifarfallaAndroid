@@ -1,6 +1,7 @@
 package nanifarfalla.app.rxjava;
 
 //import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.Log;
 
@@ -10,13 +11,14 @@ import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import nanifarfalla.app.R;
 
 public class RX00IntroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx00_intro);
+        setContentView( R.layout.activity_rx00_intro);
 
 
 
